@@ -1,0 +1,5 @@
+cohort,source_file,n_rows,positive_num_gt_0,negative_num_eq_0,positive_pct,missing_cells_predictors,missing_predictor_pct,rows_with_any_missing_predictor,target_missing,age_median
+United States – Cleveland,processed.cleveland.data,303,139,164,45.87,6,0.15,6,0,56.0
+Hungary,processed.hungarian.data,294,106,188,36.05,782,20.46,293,0,49.0
+Switzerland,processed.switzerland.data,123,115,8,93.5,273,17.07,123,0,56.0
+United States – VA Long Beach,processed.va.data,200,149,51,74.5,698,26.85,199,0,60.0

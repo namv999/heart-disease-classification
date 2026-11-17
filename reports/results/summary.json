@@ -1,0 +1,104 @@
+{
+  "dataset_name": "UCI Heart Disease - processed Cleveland subset",
+  "source_url": "https://archive.ics.uci.edu/dataset/45/heart+disease",
+  "n_samples": 303,
+  "n_features": 13,
+  "positive_samples": 139,
+  "negative_samples": 164,
+  "target_counts": {
+    "0": 164,
+    "1": 139
+  },
+  "missing_values": {
+    "ca": 4,
+    "thal": 2
+  },
+  "target_definition": "0 = num == 0; 1 = num > 0 (gộp các mức gốc 1-4 thành lớp có ghi nhận bệnh)",
+  "train_samples": 242,
+  "test_samples": 61,
+  "split": "train_test_split(test_size=0.20, stratify=y, random_state=42)",
+  "cross_validation": "StratifiedKFold(n_splits=5, shuffle=True, random_state=42) on training set",
+  "selection_rule": "Chọn mô hình có F1 trung bình 5-fold CV cao nhất trên tập train; không chọn theo kết quả test.",
+  "selected_model": "Logistic Regression",
+  "chosen_cv_metrics": {
+    "accuracy": 0.8551870748299321,
+    "precision": 0.8730744935655421,
+    "recall": 0.8098814229249012,
+    "f1": 0.8365444245676803,
+    "roc_auc": 0.9024779568257829
+  },
+  "chosen_test_metrics": {
+    "accuracy": 0.8688524590163934,
+    "precision": 0.8125,
+    "recall": 0.9285714285714286,
+    "f1": 0.8666666666666667,
+    "roc_auc": 0.9664502164502166
+  },
+  "chosen_test_confusion_matrix": [
+    [
+      27,
+      6
+    ],
+    [
+      2,
+      26
+    ]
+  ],
+  "chosen_test_classification_report": {
+    "Không ghi nhận bệnh": {
+      "precision": 0.9310344827586207,
+      "recall": 0.8181818181818182,
+      "f1-score": 0.8709677419354839,
+      "support": 33.0
+    },
+    "Có ghi nhận bệnh": {
+      "precision": 0.8125,
+      "recall": 0.9285714285714286,
+      "f1-score": 0.8666666666666667,
+      "support": 28.0
+    },
+    "accuracy": 0.8688524590163934,
+    "macro avg": {
+      "precision": 0.8717672413793103,
+      "recall": 0.8733766233766234,
+      "f1-score": 0.8688172043010753,
+      "support": 61.0
+    },
+    "weighted avg": {
+      "precision": 0.8766252119841718,
+      "recall": 0.8688524590163934,
+      "f1-score": 0.8689934778776661,
+      "support": 61.0
+    }
+  },
+  "test_class_counts": {
+    "0": 33,
+    "1": 28
+  },
+  "figures": {
+    "target_distribution": "reports\\figures\\target_distribution.png",
+    "missing_values": "reports\\figures\\missing_values.png",
+    "age_distribution": "reports\\figures\\age_distribution.png",
+    "correlation_heatmap": "reports\\figures\\correlation_heatmap.png",
+    "algorithm_comparison": "reports\\figures\\algorithm_comparison.png",
+    "confusion_matrix": "reports\\figures\\confusion_matrix.png",
+    "roc_curve": "reports\\figures\\roc_curve.png",
+    "logistic_coefficients": "reports\\figures\\logistic_coefficients.png"
+  },
+  "feature_descriptions_vi": {
+    "age": "Tuổi (năm)",
+    "sex": "Giới tính (1=nam, 0=nữ)",
+    "cp": "Loại đau ngực (1-4)",
+    "trestbps": "Huyết áp lúc nghỉ (mmHg)",
+    "chol": "Cholesterol huyết thanh (mg/dL)",
+    "fbs": "Đường huyết lúc đói > 120 mg/dL (1=có)",
+    "restecg": "Kết quả điện tâm đồ lúc nghỉ (0-2)",
+    "thalach": "Nhịp tim tối đa đạt được",
+    "exang": "Đau thắt ngực do gắng sức (1=có)",
+    "oldpeak": "ST chênh xuống khi gắng sức",
+    "slope": "Độ dốc đoạn ST đỉnh (1-3)",
+    "ca": "Số mạch chính được nhuộm màu (0-3)",
+    "thal": "Kết quả thal (3/6/7)"
+  },
+  "educational_notice": "Chỉ phục vụ học tập/minh họa; không phải thiết bị hoặc công cụ chẩn đoán y khoa. Không sử dụng cho quyết định điều trị."
+}

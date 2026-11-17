@@ -1,0 +1,54 @@
+[
+  {
+    "cohort":"United States – Cleveland",
+    "source_file":"processed.cleveland.data",
+    "n_rows":303,
+    "positive_num_gt_0":139,
+    "negative_num_eq_0":164,
+    "positive_pct":45.87,
+    "missing_cells_predictors":6,
+    "missing_predictor_pct":0.15,
+    "rows_with_any_missing_predictor":6,
+    "target_missing":0,
+    "age_median":56.0
+  },
+  {
+    "cohort":"Hungary",
+    "source_file":"processed.hungarian.data",
+    "n_rows":294,
+    "positive_num_gt_0":106,
+    "negative_num_eq_0":188,
+    "positive_pct":36.05,
+    "missing_cells_predictors":782,
+    "missing_predictor_pct":20.46,
+    "rows_with_any_missing_predictor":293,
+    "target_missing":0,
+    "age_median":49.0
+  },
+  {
+    "cohort":"Switzerland",
+    "source_file":"processed.switzerland.data",
+    "n_rows":123,
+    "positive_num_gt_0":115,
+    "negative_num_eq_0":8,
+    "positive_pct":93.5,
+    "missing_cells_predictors":273,
+    "missing_predictor_pct":17.07,
+    "rows_with_any_missing_predictor":123,
+    "target_missing":0,
+    "age_median":56.0
+  },
+  {
+    "cohort":"United States – VA Long Beach",
+    "source_file":"processed.va.data",
+    "n_rows":200,
+    "positive_num_gt_0":149,
+    "negative_num_eq_0":51,
+    "positive_pct":74.5,
+    "missing_cells_predictors":698,
+    "missing_predictor_pct":26.85,
+    "rows_with_any_missing_predictor":199,
+    "target_missing":0,
+    "age_median":60.0
+  }
+]
